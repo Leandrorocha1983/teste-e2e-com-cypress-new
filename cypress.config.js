@@ -8,10 +8,15 @@ module.exports = defineConfig({
       viewportWidthBreakpoint: 768,
     },
     requestTimeout: 50000,
-    defaultCommandTimeout: 30000
-  },
+    defaultCommandTimeout: 30000,
+    setupNodeEvents(on, config) {
+      require('@cypress/grep/src/plugin')(config)
+      return config
 
+    },
+  },
   projectId: 'xwrai9',
+
 })
 
 
