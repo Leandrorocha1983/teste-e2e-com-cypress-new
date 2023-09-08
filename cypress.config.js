@@ -6,11 +6,13 @@ module.exports = defineConfig({
     baseUrl: 'https://notes-serverless-app.com',
     env: {
       viewportWidthBreakpoint: 768,
-      requestTimeout: 50000,
-      defaultCommandTimeout: 30000
     },
+    requestTimeout: 50000,
+    defaultCommandTimeout: 30000
   },
+
   projectId: 'xwrai9',
 })
+
 
 
