@@ -96,9 +96,6 @@ Cypress.Commands.add('deleteNote', note => {
     .should('not.exist')
 })
 
-// cypress/support/commands.js
-
-// Outros comandos aqui ...
 
 Cypress.Commands.add('fillSettingsFormAndSubmit', () => {
   cy.visit('/settings')
